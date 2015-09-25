@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">欢迎使用</string>
+    <string name="app_name">成都携程固定资产管理</string>
+    <string name="name">用户名：</string>
+    <string name="passwd">密  码：</string>
+    <string name="login">登 陆</string>
+    <string name="empty">清 空</string>
+    <string name="rembername">记住用户名</string>
+    <string name="btnViewProducts">查看已有资产</string>
+    <string name="btnCreateProduct">创建新的资产</string>
+    <string name="User">使用人</string>
+    <string name="Price">采购金额</string>
+    <string name="Description">描述</string>
+    <string name="btnSave">保存</string>
+    <string name="btnDelete">删除</string>
+    <string name="allproduct">固定资产信息</string>
+    <string name="addnewproduct">添加资产信息</string>
+    <string name="editproduct">修改资产信息</string>
+    <string name="Department">部门名称</string>
+    <string name="ProductID">资产编号</string>
+    <string name="Address">存放地</string>
+    <string name="productType">设备类型</string>
+</resources>

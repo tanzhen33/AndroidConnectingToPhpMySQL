@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidhive"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@drawable/icoooopic"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.example.androidhive.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidhive.MainScreenActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- All Product Activity -->
+        <activity
+            android:name="com.example.androidhive.AllProductsActivity"
+            android:label="@string/allproduct" >
+        </activity>
+
+        <!-- Add Product Activity -->
+        <activity
+            android:name="com.example.androidhive.NewProductActivity"
+            android:label="@string/addnewproduct" >
+        </activity>
+
+        <!-- Edit Product Activity -->
+        <activity
+            android:name="com.example.androidhive.EditProductActivity"
+            android:label="@string/editproduct" >
+        </activity>
+    </application>
+
+</manifest>

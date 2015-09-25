@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@drawable/back">
+    
+    <!-- Name Label -->
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:text="@string/ProductID"
+		android:textColor="#222222"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:textSize="18dp"
+		android:gravity="center"/>
+
+	<EditText
+		android:id="@+id/inputProductid"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:layout_margin="5dp"
+		android:layout_marginBottom="15dp"
+		android:singleLine="true"
+		android:textSize="20dp"
+		android:gravity="left|center_vertical"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:text="@string/Department"
+		android:textColor="#222222"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:textSize="18dp"
+		android:gravity="center"/>
+
+	<EditText
+		android:id="@+id/inputDepartment"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:layout_margin="5dp"
+		android:layout_marginBottom="15dp"
+		android:singleLine="true"
+		android:textSize="20dp"
+		android:gravity="left|center_vertical"/>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="30dp"
+			android:text="@string/User"
+			android:textColor="#222222"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textSize="18dp"
+			android:gravity="center"
+			android:id="@+id/textView2" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="30dp"
+			android:text="@string/Address"
+			android:textColor="#222222"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textSize="18dp"
+			android:gravity="center"
+			android:id="@+id/textView"
+			android:layout_above="@+id/inputName"
+			android:layout_alignLeft="@+id/inputAddress" />
+
+		<EditText
+			android:id="@+id/inputName"
+			android:layout_width="170dp"
+			android:layout_height="45dp"
+			android:singleLine="true"
+			android:textSize="20dp"
+			android:gravity="left|center_vertical"
+			android:layout_gravity="left"
+			android:layout_below="@+id/textView2"
+			android:layout_margin="5dp"
+			android:layout_marginBottom="15dp"
+			android:layout_alignParentLeft="true" />
+
+		<EditText
+			android:id="@+id/inputAddress"
+			android:layout_width="170dp"
+			android:layout_height="45dp"
+			android:singleLine="true"
+			android:textSize="20dp"
+			android:gravity="left|center_vertical"
+			android:layout_gravity="left"
+			android:layout_below="@+id/textView"
+			android:layout_margin="5dp"
+			android:layout_marginBottom="15dp"
+			android:layout_toRightOf="@+id/inputName"
+			android:layout_alignParentRight="true" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="30dp"
+			android:text="@string/Price"
+			android:textColor="#222222"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textSize="18dp"
+			android:gravity="center"
+			android:id="@+id/textView3" />
+
+		<EditText
+			android:id="@+id/inputPrice"
+			android:layout_width="170dp"
+			android:layout_height="45dp"
+			android:singleLine="true"
+			android:inputType="numberDecimal"
+			android:textSize="20dp"
+			android:gravity="left|center_vertical"
+			android:layout_below="@+id/textView3"
+			android:layout_margin="5dp"
+			android:layout_marginBottom="15dp"
+			android:layout_alignParentLeft="true" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="30dp"
+			android:text="@string/productType"
+			android:textColor="#222222"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textSize="18dp"
+			android:gravity="center"
+			android:id="@+id/productType"
+			android:layout_alignBottom="@+id/textView3"
+			android:layout_alignLeft="@+id/inputProductType" />
+
+		<EditText
+			android:id="@+id/inputProductType"
+			android:layout_width="170dp"
+			android:layout_height="45dp"
+			android:singleLine="true"
+			android:inputType="numberDecimal"
+			android:textSize="20dp"
+			android:gravity="left|center_vertical"
+			android:layout_alignParentRight="true"
+			android:layout_margin="5dp"
+			android:layout_marginBottom="15dp"
+			android:layout_below="@+id/textView3"
+			android:layout_toRightOf="@+id/inputPrice" />
+
+	</RelativeLayout>
+	
+	<!-- Description Label -->
+    <TextView
+		android:id="@+id/Description"
+		android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/Description"
+		android:textColor="#222222"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="18dp"
+		android:gravity="center"/>
+    
+    <!-- Input description -->
+	<EditText
+		android:id="@+id/inputDesc"
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:layout_margin="5dp"
+	    android:layout_marginBottom="15dp"
+	    android:lines="4"
+	    android:gravity="left|center_vertical"
+		android:textSize="20dp"/>
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <!-- Button Create Product -->
+	<Button
+		android:id="@+id/btnSave"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/btnSave"
+		android:textSize="18dp"
+	    android:layout_weight="1"/>
+
+	<!-- Button Create Product -->
+	<Button
+		android:id="@+id/btnDelete"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/btnDelete"
+		android:textSize="18dp"
+	    android:layout_weight="1"/>	    
+	</LinearLayout>
+
+</LinearLayout>

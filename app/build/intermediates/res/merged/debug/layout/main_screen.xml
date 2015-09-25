@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/back"
+    android:weightSum="1">
+	
+    <!--  Sample Dashboard screen with Two buttons -->
+    <Button android:id="@+id/btnViewProducts"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="@string/btnViewProducts"
+        android:layout_marginTop="55dp"
+        android:textSize="18dp"
+        android:layout_weight="0.10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="34dp"
+        />
+    
+    <Button android:id="@+id/btnCreateProduct"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="@string/btnCreateProduct"
+        android:textSize="18dp"
+        android:layout_weight="0.10"
+        android:layout_alignTop="@+id/btnViewProducts"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp" />
+
+</RelativeLayout><!-- From: file:/E:/Android%20app/AndroidConnectingToPhpMySQL/app/src/main/res/layout/main_screen.xml -->
